@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MC HAMMER</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <button>magic calucator</button>
+  <script>
+    let
+    instructions1="Enter a number",
+    instructions2="Enter another number",
+    instructions3="Type 'add' 'multiply' or 'divide'";
+    
+    const button=document.querySelector('button')
+
+    button.onclick=function numOrNoNum () {
+      let input1=(prompt(instructions1));
+      let input2=(prompt(instructions2)); 
+      let input3=(prompt(instructions3));
+      if (input3=="multiply") {results=(input1*input2);}
+        else if (input3=="divide") {results=(input1/input2);}
+        else if (input3=="add") {results=(Number(input1)+Number(input2))}
+      else {results="you suck";}
+
+      alert (results)
+    }
+    // Your JavaScript goes here!
+    console.log()
+  </script>
+</body>
+</html>
