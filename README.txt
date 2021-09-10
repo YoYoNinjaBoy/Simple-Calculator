@@ -1,0 +1,1 @@
+This is just a collection of things I found challenging or interesting or made on a whim  while going through excersizes linked through the odin project.
