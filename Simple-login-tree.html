@@ -5,21 +5,23 @@
   <meta charset="UTF-8"/>
 </head>
 <body>
+  <p>Username: Admin</p>
+  <p>Password: TheMaster</p>
   <button>login</button>
   <script>
-    let greeting="I did it!"
+    //working right//
+    let greeting="I did it!";
     const button=document.querySelector("button");
     button.onclick=function login ()
     {
-    userName=(prompt("Who's There?"));
-    if (userName=="Admin") {passWord=(prompt("Password?"))
-    }
-    else if (userName=='' || "null") {alert ("Canceled")}
-    else {alert ("I don't know you.")}
-  
-    if (passWord=="TheMaster") {alert("Welcome!")}
-    else if (passWord=='' || "null") {alert("Canceled")}
-    else {alert("Wrong password")}
+    userName=(prompt("Enter username")); //asks for username
+    if (userName=="Admin") {passWord=(prompt("Password?"))} //asks for password if name is recognized
+    else if (userName===""||userName===null) {alert ("Canceled")}//cancels if field is blank or esc is pressed
+    else {alert ("I don't know you.")}//unknown user
+    if (passWord=="TheMaster") {alert("Welcome!")}//if pass is correct, welcome
+    else if (passWord==""||passWord==null) {alert("Canceled")}//cancels if field is blank or esc is pressed
+    else {alert("Wrong password")}//password is incorrect
+
   }
     // Your JavaScript goes here!
     console.log(greeting)
